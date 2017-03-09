@@ -96,10 +96,12 @@ function GramNewControllerFunction(GramFactory, $state) {
 
 function GramShowControllerFunction(GramFactory, $stateParams) {
   this.gram = GramFactory.get({id: $stateParams.id});
+  // console.log(this.gram)
 }
 
 function GramEditControllerFunction(GramFactory, $stateParams, $state) {
   this.gram = GramFactory.get({id: $stateParams.id})
+  console.log(this.gram)
   this.update = function() {
     this.gram.$update({id: $stateParams.id}, function(gram) {
       $state.go("gramShow", {id: gram.id})

@@ -1,3 +1,5 @@
 <img ng-src="{{vm.gram.photo_url}}"/ >
 <p>Author: {{vm.gram.author}}</p>
 <p>Description: {{vm.gram.body}}</p>
+<a ui-sref="gramIndex">Back</a>
+<a ui-sref="gramEdit({id: vm.gram.id})">Edit</a>
