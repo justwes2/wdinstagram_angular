@@ -1,0 +1,4 @@
+<h2>This is the Gram Index</h2>
+<div ng-repeat="gram in vm.grams">
+  <p><a ui-sref="gramShow({id: $index})">{{gram.body}}</a></p>
+</div>
